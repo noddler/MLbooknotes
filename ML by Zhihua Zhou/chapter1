@@ -1,0 +1,53 @@
+#CHAPTER 1
+1.classification
+2.regression
+3.clustering
+4.supervised/unsupervised learning
+5.induction -> generalization
+6.deduction -> specialization
+7.hypothesis / version space
+8.inductive bias: when there are a lot of hypothesis in version space, which one to choose.
+9.NO FREE LUNCH THEOREM: error expectation is not affected by algorithms.(math)
+10.8+9=> under assumption of all the problems/situations have the same probability, however, it is not. Thus for different peoblem domain, should choose the right algorithms.
+
+#CHAPTER 2 
+1.overfitting and underfitting
+2.testing set/testing error
+>**testing methods**
+>* hold out
+randomly split the training set and testing set
+directly test on testing set
+no overlap between training set and testing set
+* cross validation
+split into k fold, train on k-m fold and test on m fold
+recusively do this for k/m times
+LEAVE ONE OUT: only one example in m. Precise, but too much computaion.
+* bootstrapping
+take one out and put it back until we have the same number of examples as original dataset
+36.8% won't be selected(_OUT-OF-BAG ESTIMATE_) will be testing set.
+might change the distribution of data, commonly used when not have enough data.
+
+>**parameter tuning**
+> small dataset for model selection and parameter tuning, testing data in this phrase is called validation set
+
+3.performance measure
+>* error and accuracy
+* precision, recall, F1
+p=TP/(TP+FP): of all predicted positive ones
+R=TP/(TP+FN): of all the real positive ones
+BEP(BREAK-EVEN POINT) P=R
+F1=2PR/(P+R)
+...more generalized version and for more complex confusion marix on p32
+* ROC, AUC
+receiver operating charateristic_(super bad naming)_
+area under curve
+* unequal cost-cost curve
+
+4.hypothesis test -> how to compare different algorithms
+**to be finished**
+5.bias and variance decomposition
+**to be finished**
+
+#CHAPTER 3
+
+
